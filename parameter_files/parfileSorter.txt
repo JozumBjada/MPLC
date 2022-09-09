@@ -1,0 +1,7 @@
+dist	0.2	% propagation distance (in meters)
+xnum	1024	% number of pixels in x-direction (and also y-direction)
+L	0.03	% length of the edge of the hologram (in meters)
+lambda	808e-9	% wavelength (in meters)
+rad	0.003	% radius of the Zernike polynomials
+w0hg	0.0005	% beamwaist for the input
+w0	0.0005	% beamwaist for the Gaussian beams
