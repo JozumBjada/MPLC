@@ -1,4 +1,4 @@
-  function out = gaussian_beam(x0, y0, z, n, L, w0, lambda)
+function out = gaussian_beam(x0, y0, z, n, L, w0, lambda)
 % generate Gaussian beam
 % generates square matrix
 % x0 - x-coordinate of the center 
@@ -18,7 +18,7 @@
 	zR = pi*w0^2/lambda;
 
 	% curvature
-    Rz = z + zR^2/z;	
+	Rz = z + zR^2/z;	
 
 	% beam waist
 	w = w0*sqrt(1+(z/zR)^2);
@@ -32,7 +32,7 @@
 	% Gouy phase contribution
 	out = out.*exp(1i*1*atan2(z,zR));
     
-    % normalize
-    out = out/normCustom(out);
+        % normalize
+        out = out/normCustom(out);
     
 end
